@@ -1,6 +1,7 @@
 import { FC } from "react";
+
 import { logo, logo2x } from "@/assets/images";
-import Container from "./container";
+import { Container } from ".";
 
 const Hero: FC = () => {
   return (

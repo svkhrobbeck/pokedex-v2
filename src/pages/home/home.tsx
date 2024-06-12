@@ -1,11 +1,10 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 
+import { Filter, Hero, List } from "@/components";
 import { IPokemon } from "@/helpers/interfaces";
 import list from "@/assets/data.json";
 
-import { Filter, Hero, List } from ".";
-
-const App: FC = () => {
+const Home = () => {
   const [pokemons, setPokemons] = useState(list);
 
   const updatePokemons = (pokemons: IPokemon[]) => setPokemons(pokemons);
@@ -21,4 +20,4 @@ const App: FC = () => {
   );
 };
 
-export default App;
+export default Home;
